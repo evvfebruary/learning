@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="learning"
+                 name="learning"
+                 start-page="starter-topic.md">
+
+    <toc-element topic="starter-topic.md"/>
+    <toc-element topic="postgres.md">
+        <toc-element topic="otus.md">
+            <toc-element topic="homeworks.md">
+                <toc-element topic="hw1-isolation-levels.md">
+                    <toc-element topic="Условие.md"/>
+                </toc-element>
+            </toc-element>
+        </toc-element>
+    </toc-element>
+</instance-profile>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rules SYSTEM "https://resources.jetbrains.com/writerside/1.0/redirection-rules.dtd">
+<rules>
+    <!-- format is as follows
+    <rule id="<unique id>">
+        <accepts>page.html</accepts>
+    </rule>
+    -->
+    <rule id="3d212154">
+        <description>Created after removal of "How to" from learning</description>
+        <accepts>How-to.html</accepts>
+    </rule>
+    <rule id="56e8034a">
+        <description>Created after removal of "Tutorial" from learning</description>
+        <accepts>Tutorial.html</accepts>
+    </rule>
+    <rule id="482e2e38">
+        <description>Created after removal of "Overview" from learning</description>
+        <accepts>Overview.html</accepts>
+    </rule>
+    <rule id="b70e5b6">
+        <description>Created after removal of "Reference" from learning</description>
+        <accepts>Reference.html</accepts>
+    </rule>
+</rules>
