@@ -10,7 +10,7 @@
 </procedure>
 
 Создаем машинку в Compute Cloud, выберем 4x4 конфигурацию для начала.
-![postgres-yc-example.png](postgres-yc-example.png)
+![postgres-yc-example.png](postgres-yc-example.png){ width="450" }
 
 Получаем готовый к эксплуатации инстанс на Yandex Cloud.
 ![yc-instance.png](yc-instance.png)
