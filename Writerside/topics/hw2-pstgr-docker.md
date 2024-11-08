@@ -28,7 +28,9 @@
 
 ### Решение
 
-Создадим `Docker Compose` с указанными требованиями, легкой рукой дополнительно потюнем `shm_size`, чтобы запомнилось.
+Создадим `Docker Compose` с указанными требованиями, легкой рукой дополнительно потюнем `shm_size`, чтобы запомнилось.    
+
+Все файлы можно посмотреть в [этом репозитории](https://github.com/evvfebruary/learning/tree/main/databases/postgres/otus/homeworks/hw2-pstgr-docker).
 
 ```yaml
 version: '3.9'
