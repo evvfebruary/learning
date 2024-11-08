@@ -1,0 +1,34 @@
+version: '3.9'
+
+services:
+
+  postgres:
+    image: postgres:14
+    container_name: postgres-server
+    restart: always
+#    Tune shared memory size
+    shm_size: 128mb
+#    Add volumes for data
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+#      Add connections from any host
+      - ./pg_hba.conf:/var/lib/postgresql/data/pg_hba.conf
+    ports:
+      - '5432:5432'
+    environment:
+#      Override some environments
+      POSTGRES_USER: postgres_user
+      POSTGRES_PASSWORD: postgres_password
+
+# Create separate container for psql client
+  pgclient:
+    image: postgres:14
+    container_name: postgres-client
+    depends_on:
+      - postgres
+#    Keep it running with some dirty trick
+    entrypoint: ["tail", "-f", "/dev/null"]
+
+volumes:
+  pgdata:
+    driver: local
